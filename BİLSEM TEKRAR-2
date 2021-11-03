@@ -1,0 +1,26 @@
+LİSTELER
+liste=[3,8,5,1,9,7,6,10,87,5] 
+print(liste[0]) 
+# liste.append("ahmet") 
+# print(liste) 
+liste.sort(reverse=True) 
+print(liste) 
+liste.pop(0) 
+print(liste)
+
+
+UYGULAMA
+#kullanıcıdan 10 tane isimn isteyip bu sismleri alfabet sırada ekrana yazdıran pythn kodu
+adlistesi=[]
+for i in range (0,10):
+    isim = input("Sıralanacak kelimeyi giriniz:")
+    adlistesi.append(isim)
+siralama=input("Nasıl sıralansın: a)Düz b)Ters (cevaba sadece harfi yazınız.)").upper()
+if siralama == "A":
+    adlistesi.sort()
+elif siralama =="B":
+    adlistesi.sort(reverse=True)
+else:
+    print("Hatalı harf girişi")
+for j in range (0,10):
+    print(j+1,". sıradaki",adlistesi[j])
