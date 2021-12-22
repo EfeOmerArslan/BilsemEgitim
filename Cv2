@@ -1,0 +1,6 @@
+import cv2
+resim=cv2.imread("bilsem.jpeg",0)
+cv2.imshow("Bilsem",resim)
+cv2.imwrite("bilsemyeniresim",resim)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
