@@ -4,3 +4,11 @@ cv2.imshow("Bilsem",resim)
 cv2.imwrite("bilsemyeniresim",resim)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
+
+import cv2
+for i in range(1,10):
+    resim = cv2.imread("resimler/resim"+str(i)+".jpg", 0)
+    # cv2.imshow("Ataturk", resim)
+    cv2.imwrite("resimler/yeniresim"+str(i)+".jpg", resim)
+    cv2.waitKey(0)
+    cv2.destroyAllWindows()
